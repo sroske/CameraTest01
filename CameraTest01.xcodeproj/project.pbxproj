@@ -13,7 +13,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		A964E51611FE409D0003DF5B /* CameraImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A964E51511FE409D0003DF5B /* CameraImageView.m */; };
+		A97BA1091214B1F9009B878A /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = A97BA1081214B1F9009B878A /* square.png */; };
+		A9910F4E11FE831E0012811F /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = A9910F4D11FE831E0012811F /* haarcascade_frontalface_default.xml */; };
 		A9A7547A11FC86B400D89915 /* CameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7547811FC86B400D89915 /* CameraVC.m */; };
 		A9A7547B11FC86B400D89915 /* CameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A7547911FC86B400D89915 /* CameraVC.xib */; };
 		A9A754D411FCA01500D89915 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A754D311FCA01500D89915 /* AVFoundation.framework */; };
@@ -34,8 +35,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* CameraTest01_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTest01_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CameraTest01-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CameraTest01-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A964E51411FE409D0003DF5B /* CameraImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImageView.h; sourceTree = "<group>"; };
-		A964E51511FE409D0003DF5B /* CameraImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImageView.m; sourceTree = "<group>"; };
+		A97BA1081214B1F9009B878A /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		A9910F4D11FE831E0012811F /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
 		A9A7547711FC86B400D89915 /* CameraVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraVC.h; sourceTree = "<group>"; };
 		A9A7547811FC86B400D89915 /* CameraVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraVC.m; sourceTree = "<group>"; };
 		A9A7547911FC86B400D89915 /* CameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraVC.xib; sourceTree = "<group>"; };
@@ -71,8 +72,6 @@
 				A9A7547711FC86B400D89915 /* CameraVC.h */,
 				A9A7547811FC86B400D89915 /* CameraVC.m */,
 				A9A7547911FC86B400D89915 /* CameraVC.xib */,
-				A964E51411FE409D0003DF5B /* CameraImageView.h */,
-				A964E51511FE409D0003DF5B /* CameraImageView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -109,6 +108,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A97BA1081214B1F9009B878A /* square.png */,
+				A9910F4D11FE831E0012811F /* haarcascade_frontalface_default.xml */,
 				A9A7555911FCA6C100D89915 /* image.png */,
 				A9A7555A11FCA6C100D89915 /* image@2x.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -176,6 +177,8 @@
 				A9A7547B11FC86B400D89915 /* CameraVC.xib in Resources */,
 				A9A7555B11FCA6C100D89915 /* image.png in Resources */,
 				A9A7555C11FCA6C100D89915 /* image@2x.png in Resources */,
+				A9910F4E11FE831E0012811F /* haarcascade_frontalface_default.xml in Resources */,
+				A97BA1091214B1F9009B878A /* square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +192,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CameraTest01AppDelegate.m in Sources */,
 				A9A7547A11FC86B400D89915 /* CameraVC.m in Sources */,
-				A964E51611FE409D0003DF5B /* CameraImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +207,23 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CameraTest01_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "$(SRCROOT)/opencv/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "$(SRCROOT)/opencv/include";
 				INFOPLIST_FILE = "CameraTest01-Info.plist";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
+					"-lstdc++",
+					"-lz",
+					"$(SRCROOT)/opencv/lib/libcv.a",
+					"$(SRCROOT)/opencv/lib/libcxcore.a",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
+					"-lstdc++",
+					"-lz",
+					"$(SRCROOT)/opencv/lib/libcv.a",
+					"$(SRCROOT)/opencv/lib/libcxcore.a",
+				);
 				PRODUCT_NAME = CameraTest01;
 			};
 			name = Debug;
@@ -217,7 +235,23 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CameraTest01_Prefix.pch;
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "$(SRCROOT)/opencv/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "$(SRCROOT)/opencv/include";
 				INFOPLIST_FILE = "CameraTest01-Info.plist";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
+					"-lstdc++",
+					"-lz",
+					"$(SRCROOT)/opencv/lib/libcv.a",
+					"$(SRCROOT)/opencv/lib/libcxcore.a",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
+					"-lstdc++",
+					"-lz",
+					"$(SRCROOT)/opencv/lib/libcv.a",
+					"$(SRCROOT)/opencv/lib/libcxcore.a",
+				);
 				PRODUCT_NAME = CameraTest01;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -231,6 +265,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/opencv/include";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
 			};
@@ -244,6 +279,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/opencv/include";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;

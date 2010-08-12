@@ -7,20 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CameraImageView.h"
+#import "cv.h"
 
 @interface CameraVC : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate> {
 	UIImageView *imageView;
+	UIImageView *debugView;
+	
+	UIImageView *squareView;
+	
 	AVCaptureSession *session;
 	UIBarButtonItem	*statusItem;
 	UIBarButtonItem	*startItem;
 	UIBarButtonItem	*stopItem;
+	
+	CvHaarClassifierCascade* cascade;
+	CvMemStorage* storage;
 }
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *statusItem;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *startItem;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *stopItem;
+
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIImageView *debugView;
+@property (nonatomic, retain) IBOutlet UIImageView *squareView;
+
 @property (nonatomic, retain) AVCaptureSession *session;
 
 - (IBAction) start;
